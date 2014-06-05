@@ -9,6 +9,12 @@ To run the example project; clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+Trying to update a pod with teh latest SDK? Ensure Ruby 2.1.1+ is installed, as well as cocoapods:
+
+`rvm update <version>`
+`rvm use <version>`
+`sudo gem install cocoapods`
+
 ## Installation
 
 KiipSDK is available through [CocoaPods](http://cocoapods.org), to install
