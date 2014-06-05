@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   s.homepage         = "http://www.kiip.com/"
   s.license          = { :type => 'Commercial', :text => license }
   s.author           = { "Kiip" => "http://www.kiip.com" }
-  s.source           = { :git => "https://github.com/humajime/KiipSDKCocoaPods.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/kiip/kiip-ios-sdk-cocopods.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/kiip'
 
   s.platform     = :ios, '6.0'
