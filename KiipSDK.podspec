@@ -32,9 +32,9 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 			Simple event based monetization library. Engage users with rewards from brands they love.
                        DESC
-  s.homepage         = "http://www.kiip.com/"
+  s.homepage         = "http://docs.kiip.com/"
   s.license          = { :type => 'Commercial', :text => license }
-  s.author           = { "Kiip" => "http://www.kiip.com" }
+  s.author           = { "Kiip" => "http://docs.kiip.com" }
   s.source           = { :git => "https://github.com/kiip/kiip-ios-sdk-cocopods.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/kiip'
 
