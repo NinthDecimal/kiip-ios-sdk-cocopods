@@ -60,6 +60,12 @@ extern NSString * const kKPCapabilities_Video;
 @property (strong, nonatomic) NSString *email;
 
 /**
+ The user's id. Setting this will set user Id.
+ */
+@property (strong, nonatomic) NSString *userId;
+
+
+/**
  The user's gender. Setting this will help target rewards to your users more effectively.
  */
 @property (strong, nonatomic) NSString *gender;
@@ -97,12 +103,13 @@ extern NSString * const kKPCapabilities_Video;
  */
 + (Kiip *) sharedInstance;
 
-/**
- Sets the shared Kiip instance
- 
- @param kiip New shared Kiip instance.
- */
-+ (void) setSharedInstance:(Kiip *)kiip;
+// Deprecated or removed from 2.3.1 version
+///**
+// Sets the shared Kiip instance
+// 
+// @param kiip New shared Kiip instance.
+// */
+//+ (void) setSharedInstance:(Kiip *)kiip;
 
 
 /** @name Creating a new Kiip object */
@@ -113,7 +120,7 @@ extern NSString * const kKPCapabilities_Video;
  @param appKey The Application's key.
  @param appSecret The Application's secret.
  */
-- (id) initWithAppKey:(NSString *)appKey andSecret:(NSString *)appSecret;
++ (void) initWithAppKey:(NSString *)appKey andSecret:(NSString *)appSecret;
 
 
 /** @name Saving Moments */
