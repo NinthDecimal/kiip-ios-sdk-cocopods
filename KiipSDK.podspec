@@ -27,7 +27,7 @@ EOT
 
 Pod::Spec.new do |s|
   s.name             = "KiipSDK"
-  s.version          = "2.3.1"
+  s.version          = "3.0.1"
   s.summary          = "KiipSDK."
   s.description      = <<-DESC
 			Simple event based monetization library. Engage users with rewards from brands they love.
@@ -40,14 +40,10 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '6.0'
   s.requires_arc = true
-  s.default_subspec = 'KiipSDK'
 
-  s.subspec 'KiipSDK' do |ss|
-    ss.source_files = 'Kiip/*.h'
-    ss.preserve_paths = 'Kiip/*.a'
-    ss.libraries = "z", "Kiip"
-    ss.frameworks = 'CoreTelephony', 'QuartzCore', 'SystemConfiguration', 'AdSupport', 'Passkit', 'MediaPlayer'
-    ss.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/KiipSDK/Kiip/"' }
-    ss.resource_bundle = { 'KiipSDKResources' => 'Kiip/*.png' }
-  end
+  s.vendored_frameworks = 'Kiip/Framework/*.framework'
+  s.resource = "Kiip/Resource/KiipSDKResources.bundle"
+  #s.ios.source_files = 'Kiip/Source'
+  s.ios.frameworks = 'CoreTelephony', 'QuartzCore', 'SystemConfiguration', 'AdSupport', 'Passkit', 'MediaPlayer'
+
 end
