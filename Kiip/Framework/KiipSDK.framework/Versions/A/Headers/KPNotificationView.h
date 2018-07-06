@@ -28,4 +28,6 @@
  */
 @property (strong, nonatomic) KPPoptart *poptart;
 
+-(void) viewDidLayoutSubviews;
+
 @end
