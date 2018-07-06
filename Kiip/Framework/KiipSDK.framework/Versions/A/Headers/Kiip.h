@@ -111,7 +111,7 @@ typedef enum AgeGroup : NSUInteger {
 
  @discussion The delegate must adopt the KiipDelegate formal protocol.
  */
-@property (assign, nonatomic, setter = setDelegate:) id<KiipDelegate> delegate;
+@property (weak, nonatomic, setter = setDelegate:) id<KiipDelegate> delegate;
 
 
 /** @name Setting and Getting the Kiip instance */

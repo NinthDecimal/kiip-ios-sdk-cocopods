@@ -53,7 +53,7 @@ typedef enum {
 /**
  The delegate of the Notification object.
  */
-@property (assign, nonatomic) id<KPNotificationDelegate> delegate;
+@property (weak, nonatomic) id<KPNotificationDelegate> delegate;
 
 @end
 

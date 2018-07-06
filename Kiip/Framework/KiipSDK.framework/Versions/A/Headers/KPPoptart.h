@@ -42,7 +42,7 @@
 /**
  The delegate of the Poptart object.
  */
-@property (assign, nonatomic) id<KPPoptartDelegate> delegate;
+@property (weak, nonatomic) id<KPPoptartDelegate> delegate;
 
 
 /** @name Showing the Poptart */

@@ -33,7 +33,7 @@
 /**
  The delegate of the Modal object.
  */
-@property (assign, nonatomic) id<KPModalDelegate> delegate;
+@property (weak, nonatomic) id<KPModalDelegate> delegate;
 
 @end
 
