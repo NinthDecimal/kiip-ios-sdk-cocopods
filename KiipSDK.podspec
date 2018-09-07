@@ -27,7 +27,7 @@ EOT
 
 Pod::Spec.new do |s|
   s.name             = "KiipSDK"
-  s.version          = "3.0.2"
+  s.version          = "3.0.3"
   s.summary          = "KiipSDK."
   s.description      = <<-DESC
 			Simple event based monetization library. Engage users with rewards from brands they love.

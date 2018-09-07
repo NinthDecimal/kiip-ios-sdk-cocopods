@@ -19,20 +19,20 @@ Trying to update a pod with teh latest SDK? Ensure Ruby 2.1.1+ is installed, as 
 
 KiipSDK is available through [CocoaPods](http://cocoapods.org), to install
 it simply add the following line to your Podfile:
-    
-    pod "KiipSDK"
+
+pod "KiipSDK"
 
 If you have created a Podfile for the first time, uncomment these two lines of code (or add them).
 
-    platform :ios, '9.0'
-    
-    use_frameworks!
+platform :ios, '9.0'
+
+use_frameworks!
 
 Open up "YOUR_PROJECT_NAME".xcworkspace and click on your project and go to the "Build Setting."
 Under Build Option, there is a field called "Always Embed Swift Standard Libraries" and mark this as "Yes"
 
 That's it! You are ready to start your project!
- 
+
 Visit our [documentation page](http://docs.kiip.me) for more information on how to use it.
 
 ## License
