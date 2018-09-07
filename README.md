@@ -1,63 +1,41 @@
-# Kiip iOS SDK
+# KiipSDK
 
-Supported platforms: iOS 9.3+
-Compiled with support for 64-bit.
+[![Version](http://cocoapod-badges.herokuapp.com/v/KiipSDK/badge.png)](http://cocoadocs.org/docsets/KiipSDK)
+[![Platform](http://cocoapod-badges.herokuapp.com/p/KiipSDK/badge.png)](http://cocoadocs.org/docsets/KiipSDK)
 
-## Public interfaces
+## Usage
 
-* Kiip.h
-* KPPoptart.h
-* KPNotification.h
-* KPModal.h
-* KPNotificationView.h
-* KPNativeRewardView.h
-* KPTableView.h
+To run the example project; clone the repo, and run `pod install` from the Example directory first.
 
-## Resources
+## Requirements
 
-* KiipSDKResources.bundle
-* kp_activity_indicator.png
-* kp_activity_indicator@2x.png
-* kp_webview_o_button.png
-* kp_webview_o_button@2x.png
-* kp_webview_x_button.png
-* kp_webview_x_button@2x.png
+Trying to update a pod with teh latest SDK? Ensure Ruby 2.1.1+ is installed, as well as cocoapods:
 
-## Required Libraries
+`rvm update <version>`
+`rvm use <version>`
+`sudo gem install cocoapods`
 
-* CoreTelephony.framework
-* QuartzCore.framework
-* SystemConfiguration.framework
-* AdSupport.framework
-* MediaPlayer.framework
-* AVFoundation.framework
-* CoreMotion.framework
-* GLKit.framework
-* KIIPMoatMobileAppKit.framework
+## Installation
 
-## Optional Libraries
+KiipSDK is available through [CocoaPods](http://cocoapods.org), to install
+it simply add the following line to your Podfile:
 
-* CoreLocation.framework
+pod "KiipSDK"
 
-## Instructions
+If you have created a Podfile for the first time, uncomment these two lines of code (or add them).
 
-1. Drag-drop `KiipSDK.framework`, `KIIPMoatMobileAppKit.framework`, and `KiipSDKResources.bundle` into your XCode project.
-2. In `Build Phases`, verify that `KiipSDK.framework` and `KIIPMoatMobileAppKit.framework` are in the `Build Phases` > `Link Binary with Libraries` and the `KiipSDKResources.bundle` in `Build Phases` >  `Copy Bundle Resources` section
-3. Add the required libraries to your project (mentioned above)
-4. Use `#import <KiipSDK/KiipSDK.h>`
+platform :ios, '9.0'
 
-### Location (Optional)
+use_frameworks!
 
-Kiip has the ability to automatically retrieve the user's location, but the application must first
-request permission for location updates as well as include CoreLocation.framework
+Open up "YOUR_PROJECT_NAME".xcworkspace and click on your project and go to the "Build Setting."
+Under Build Option, there is a field called "Always Embed Swift Standard Libraries" and mark this as "Yes"
 
-To request permission, you must add the following code:
+That's it! You are ready to start your project!
 
-CLLocationManager *lm = [[CLLocationManager alloc] init];
-[lm startUpdatingLocation];
-[lm stopUpdatingLocation];
+Visit our [documentation page](http://docs.kiip.me) for more information on how to use it.
 
+## License
 
-## Support
+KiipSDK is available under the MIT license. See the LICENSE file for more info.
 
-For integration and reference, see our docs at http://docs.kiip.me
